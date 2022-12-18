@@ -1,1 +1,1 @@
-{"result": [{"Query_Text": "I need a leader battery", "Search_Result": "{\"Part_Name\":{\"0\":\"battery\"},\"Location\":{\"0\":\"third row first column\"},\"Quantity\":{\"0\":6}}"}]}
+{"result": {"Query_Text": "Battery radiator and front axle", "Search_Result": "{\"Part_Name\":{\"0\":\"battery\",\"1\":\"Radiator\",\"2\":\"Front Axle\"},\"Location\":{\"0\":\"third row first column\",\"1\":\"fourth row fifth column\",\"2\":\"First row tenth column\"},\"Quantity\":{\"0\":6,\"1\":4,\"2\":7}}", "value": 3}}

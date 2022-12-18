@@ -37,6 +37,8 @@ var ignore_onend;
 var start_timestamp;
 var recognition;
 var finalresponse='';
+var finalres=''
+
 $( document ).ready(function() {
   for (var i = 0; i < langs.length; i++) {
     select_language.options[i] = new Option(langs[i][0], i);
@@ -180,6 +182,9 @@ $("#start_button").click(function () {
   ignore_onend = false;
   final_span.innerHTML = '';
   interim_span.innerHTML = '';
+  Destination.innerHTML = '';
+  Partname.innerHTML = '';
+  Quantity.innerHTML = '';
   start_img.src = 'static/images/mic-slash.gif';
   showInfo('allow');
   start_timestamp = event.timeStamp;
@@ -218,7 +223,7 @@ function senddata() {
             console.log("failure");
         }
     });
-    const myTimeout = setTimeout(fetchdata, 3000);    
+    const myTimeout = setTimeout(fetchdata, 2000);    
 }
 
 function fetchdata() {
@@ -228,7 +233,59 @@ function fetchdata() {
       })
       .then(function(data) {
         console.log(data);
-        finalresponse = data.result[0].Search_Result
-       console.log(finalresponse);
+       // console.log(finalresponse);
+       if(data.result.Search_Result === "Please try rephrasing or update the data")
+       {
+           finalresponse = data.result.Search_Result
+           final_span.innerHTML = "Query-Text : " + data.result.Query_Text
+           Partname.innerHTML = finalresponse
+       }
+       else
+       {
+           finalresponse = JSON.parse(data.result.Search_Result)
+           final_span.innerHTML = "Query-Text : " + data.result.Query_Text
+           if(data.result.value === 1)
+           {
+               Destination.innerHTML = "Location : "+ finalresponse.Location[0] 
+               Partname.innerHTML = "Part-Name : "+ finalresponse.Part_Name[0]
+               Quantity.innerHTML = "Quantity : "+ finalresponse.Quantity[0]
+           }
+           if(data.result.value === 2)
+           {
+               Destination.innerHTML = "Location : "+ finalresponse.Location[0]+ " , " + finalresponse.Location[1]
+               Partname.innerHTML = "Part-Name : "+ finalresponse.Part_Name[0]+ " , " + finalresponse.Part_Name[1]
+               Quantity.innerHTML = "Quantity : "+ finalresponse.Quantity[0]+ " , " + finalresponse.Quantity[1]
+           }
+           if(data.result.value === 3)
+           {
+               Destination.innerHTML = "Location : "+ finalresponse.Location[0]+ " , " + finalresponse.Location[1]+ " , " +                              finalresponse.Location[2]
+               Partname.innerHTML = "Part-Name : "+ finalresponse.Part_Name[0]+ " , " + finalresponse.Part_Name[1]+ " , " +                              finalresponse.Part_Name[2]
+               Quantity.innerHTML = "Quantity : "+ finalresponse.Quantity[0]+ " , " + finalresponse.Quantity[1]+ " , " +                                  finalresponse.Quantity[2]
+           }
+           if(data.result.value === 4)
+           {
+               Destination.innerHTML = "Location : "+ finalresponse.Location[0]+ " , " + finalresponse.Location[1]+ " , " +                              finalresponse.Location[2]+ " , " + finalresponse.Location[3]
+               Partname.innerHTML = "Part-Name : "+ finalresponse.Part_Name[0]+ " , " + finalresponse.Part_Name[1]+ " , " +                              finalresponse.Part_Name[2]+ " , " + finalresponse.Part_Name[3]
+               Quantity.innerHTML = "Quantity : "+ finalresponse.Quantity[0]+ " , " + finalresponse.Quantity[1]+ " , " +                                  finalresponse.Quantity[2]+ " , " + finalresponse.Quantity[3]
+           }
+           if(data.result.value === 5)
+           {
+               Destination.innerHTML = "Location : "+ finalresponse.Location[0]+ " , " + finalresponse.Location[1]+ " , " +                              finalresponse.Location[2]+ " , " + finalresponse.Location[3]+ " , " + finalresponse.Location[4]
+               Partname.innerHTML = "Part-Name : "+ finalresponse.Part_Name[0]+ " , " + finalresponse.Part_Name[1]+ " , " +                              finalresponse.Part_Name[2]+ " , " + finalresponse.Part_Name[3]+ " , " + finalresponse.Part_Name[4]
+               Quantity.innerHTML = "Quantity : "+ finalresponse.Quantity[0]+ " , " + finalresponse.Quantity[1]+ " , " +                                  finalresponse.Quantity[2]+ " , " + finalresponse.Quantity[3]+ " , " + finalresponse.Quantity[4]
+           }
+           if(data.result.value === 6)
+           {
+               Destination.innerHTML = "Location : "+ finalresponse.Location[0]+ " , " + finalresponse.Location[1]+ " , " +                              finalresponse.Location[2]+ " , " + finalresponse.Location[3]+ " , " + finalresponse.Location[4]+ " , " +                                  finalresponse.Location[5]
+               Partname.innerHTML = "Part-Name : "+ finalresponse.Part_Name[0]+ " , " + finalresponse.Part_Name[1]+ " , " +                              finalresponse.Part_Name[2]+ " , " + finalresponse.Part_Name[3]+ " , " + finalresponse.Part_Name[4]+ " , " +                                finalresponse.Part_Name[5]
+               Quantity.innerHTML = "Quantity : "+ finalresponse.Quantity[0]+ " , " + finalresponse.Quantity[1]+ " , " +                                  finalresponse.Quantity[2]+ " , " + finalresponse.Quantity[3]+ " , " + finalresponse.Quantity[4]+ " , " +                                  finalresponse.Quantity[5]
+           }
+           if(data.result.value === 7)
+           {
+               Destination.innerHTML = "Location : "+ finalresponse.Location[0]+ " , " + finalresponse.Location[1]+ " , " +                              finalresponse.Location[2]+ " , " + finalresponse.Location[3]+ " , " + finalresponse.Location[4]+ " , " +                                  finalresponse.Location[5]+ " , " + finalresponse.Location[6]
+               Partname.innerHTML = "Part-Name : "+ finalresponse.Part_Name[0]+ " , " + finalresponse.Part_Name[1]+ " , " +                              finalresponse.Part_Name[2]+ " , " + finalresponse.Part_Name[3]+ " , " + finalresponse.Part_Name[4]+ " , " +                                finalresponse.Part_Name[5]+ " , " + finalresponse.Part_Name[6]
+               Quantity.innerHTML = "Quantity : "+ finalresponse.Quantity[0]+ " , " + finalresponse.Quantity[1]+ " , " +                                  finalresponse.Quantity[2]+ " , " + finalresponse.Quantity[3]+ " , " + finalresponse.Quantity[4]+ " , " +                                  finalresponse.Quantity[5]+ " , " + finalresponse.Quantity[6]
+           }
+       }
       });
 }

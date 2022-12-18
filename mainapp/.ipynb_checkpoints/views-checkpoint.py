@@ -64,9 +64,9 @@ def checking(text,df):
             value=[]
             for i in output:
                 value.append(dict[i])
-            return  value
+            return  value,len(output)
         else:
-            return 0
+            return 0,0
         
 @api_view(['GET'])
 def home(request):
@@ -89,7 +89,7 @@ def search(request):
             df=df.drop(["id"],axis=1)
             text_query=request.data['result']
             text=preprocess(text_query)
-            final=checking(text,df)
+            final,value=checking(text,df)
             print(final)
             if final==0:
                 final_df="Please try rephrasing or update the data"
@@ -99,7 +99,7 @@ def search(request):
             #serializer=voiceSerializer(next(iter(final)),many=True)
             #field=["Part_Name","Location","Quantity"]
             print(final_df,text_query,"$$$$$$$$$$$$$$")
-            context={"result" :[{"Query_Text":text_query, "Search_Result":final_df}]}
+            context={"result" :{"Query_Text":text_query, "Search_Result":final_df,"value":value}}
             with open('data.json', 'w') as f:
                 json.dump(context, f)
             #return Response(final_df)
