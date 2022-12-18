@@ -27,7 +27,7 @@ var messages = {
       msg: 'Stop listening, click on the microphone icon to restart',
       class: 'alert-success'},
   "copy": {
-    msg: 'Content copy to clipboard successfully.',
+    msg: 'Text sent sucessfully.',
     class: 'alert-success'},
 }
 
@@ -36,7 +36,7 @@ var recognizing = false;
 var ignore_onend;
 var start_timestamp;
 var recognition;
-
+var finalresponse='';
 $( document ).ready(function() {
   for (var i = 0; i < langs.length; i++) {
     select_language.options[i] = new Option(langs[i][0], i);
@@ -57,7 +57,7 @@ $( document ).ready(function() {
     recognition.onstart = function() {
       recognizing = true;
       showInfo('speak_now');
-      start_img.src = 'images/mic-animation.gif';
+      start_img.src = 'static/images/mic-animation.gif';
     };
 
     recognition.onerror = function(event) {
@@ -67,7 +67,7 @@ $( document ).ready(function() {
         ignore_onend = true;
       }
       if (event.error == 'audio-capture') {
-        start_img.src = 'images/mic.gif';
+        start_img.src = 'static/images/mic.gif';
         showInfo('no_microphone');
         ignore_onend = true;
       }
@@ -86,7 +86,7 @@ $( document ).ready(function() {
       if (ignore_onend) {
         return;
       }
-      start_img.src = 'images/mic.gif';
+      start_img.src = 'static/images/mic.gif';
       if (!final_transcript) {
         showInfo('start');
         return;
@@ -115,7 +115,6 @@ $( document ).ready(function() {
     };
   }
 });
-
 
 function updateCountry() {
   for (var i = select_dialect.options.length - 1; i >= 0; i--) {
@@ -181,7 +180,7 @@ $("#start_button").click(function () {
   ignore_onend = false;
   final_span.innerHTML = '';
   interim_span.innerHTML = '';
-  start_img.src = 'images/mic-slash.gif';
+  start_img.src = 'static/images/mic-slash.gif';
   showInfo('allow');
   start_timestamp = event.timeStamp;
 });
@@ -201,4 +200,35 @@ function showInfo(s) {
     $("#info").removeClass();
     $("#info").addClass('d-none');
   }
+}
+
+function senddata() {
+    var result = final_transcript ;
+    $.ajax({
+        type: "POST",
+        url: '/search',
+        data: {
+            "result": result,
+        },
+        dataType: "json",
+        success: function (data) {
+            console.log("successfull")
+        },
+        failure: function () {
+            console.log("failure");
+        }
+    });
+    const myTimeout = setTimeout(fetchdata, 3000);    
+}
+
+function fetchdata() {
+   fetch('/search')
+      .then(function(response) {
+        return response.json();
+      })
+      .then(function(data) {
+        console.log(data);
+        finalresponse = data.result[0].Search_Result
+       console.log(finalresponse);
+      });
 }

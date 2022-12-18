@@ -1,0 +1,1047 @@
+[2022-12-18 05:38:12,195: INFO: views]: >>>>>[]<<<<<
+
+
+
+[2022-12-18 05:38:12,295: ERROR: log]: Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/envs2/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/root/envs2/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/root/envs2/lib/python3.6/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/root/envs2/lib/python3.6/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/root/envs2/lib/python3.6/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/root/mg_poc/mainapp/views.py", line 80, in search
+    text=preprocess(text_query)
+  File "/root/mg_poc/mainapp/views.py", line 32, in preprocess
+    word_tokens_1 = word_tokenize(words)
+  File "/root/envs2/lib/python3.6/site-packages/nltk/tokenize/__init__.py", line 129, in word_tokenize
+    sentences = [text] if preserve_line else sent_tokenize(text, language)
+  File "/root/envs2/lib/python3.6/site-packages/nltk/tokenize/__init__.py", line 107, in sent_tokenize
+    return tokenizer.tokenize(text)
+  File "/root/envs2/lib/python3.6/site-packages/nltk/tokenize/punkt.py", line 1276, in tokenize
+    return list(self.sentences_from_text(text, realign_boundaries))
+  File "/root/envs2/lib/python3.6/site-packages/nltk/tokenize/punkt.py", line 1332, in sentences_from_text
+    return [text[s:e] for s, e in self.span_tokenize(text, realign_boundaries)]
+  File "/root/envs2/lib/python3.6/site-packages/nltk/tokenize/punkt.py", line 1332, in <listcomp>
+    return [text[s:e] for s, e in self.span_tokenize(text, realign_boundaries)]
+  File "/root/envs2/lib/python3.6/site-packages/nltk/tokenize/punkt.py", line 1322, in span_tokenize
+    for sentence in slices:
+  File "/root/envs2/lib/python3.6/site-packages/nltk/tokenize/punkt.py", line 1421, in _realign_boundaries
+    for sentence1, sentence2 in _pair_iter(slices):
+  File "/root/envs2/lib/python3.6/site-packages/nltk/tokenize/punkt.py", line 318, in _pair_iter
+    prev = next(iterator)
+  File "/root/envs2/lib/python3.6/site-packages/nltk/tokenize/punkt.py", line 1395, in _slices_from_text
+    for match, context in self._match_potential_end_contexts(text):
+  File "/root/envs2/lib/python3.6/site-packages/nltk/tokenize/punkt.py", line 1375, in _match_potential_end_contexts
+    for match in reversed(list(self._lang_vars.period_context_re().finditer(text))):
+TypeError: expected string or bytes-like object
+[2022-12-18 06:01:29,626: WARNING: log]: Not Found: /showLogin.cc
+[2022-12-18 07:07:56,410: WARNING: log]: Not Found: /owa/auth/logon.aspx
+[2022-12-18 07:11:39,799: WARNING: log]: Not Found: /ecp/Current/exporttool/microsoft.exchange.ediscovery.exporttool.application
+[2022-12-18 07:12:09,511: WARNING: log]: Not Found: /owa/auth/x.js
+[2022-12-18 07:13:41,087: WARNING: log]: Not Found: /mg_poc/static/images/mic-animation.gif
+[2022-12-18 07:13:41,315: WARNING: log]: Not Found: /images/mic-slash.gif
+[2022-12-18 07:13:42,302: INFO: views]: >>>>>Hello I am Kishore<<<<<
+
+
+
+[2022-12-18 07:13:42,753: WARNING: log]: Not Found: /images/mic.gif
+[2022-12-18 07:14:42,431: WARNING: log]: Not Found: /images/mic-slash.gif
+[2022-12-18 07:14:42,463: WARNING: log]: Not Found: /mg_poc/static/images/mic-animation.gif
+[2022-12-18 07:14:50,292: INFO: views]: >>>>>Hi I am Kishore<<<<<
+
+
+
+[2022-12-18 07:14:52,020: WARNING: log]: Not Found: /images/mic.gif
+[2022-12-18 07:15:23,180: WARNING: log]: Not Found: /images/mic-slash.gif
+[2022-12-18 07:15:23,204: WARNING: log]: Not Found: /mg_poc/static/images/mic-animation.gif
+[2022-12-18 07:16:01,030: WARNING: log]: Not Found: /images/mic-slash.gif
+[2022-12-18 07:16:01,278: WARNING: log]: Not Found: /mg_poc/static/images/mic-animation.gif
+[2022-12-18 07:16:07,679: WARNING: log]: Not Found: /my_def_in_view
+[2022-12-18 07:16:07,789: WARNING: log]: Not Found: /images/mic.gif
+[2022-12-18 07:17:52,623: WARNING: log]: Not Found: /mg_poc/static/images/mic-animation.gif
+[2022-12-18 07:17:55,886: WARNING: log]: Not Found: /images/mic-slash.gif
+[2022-12-18 07:17:58,094: WARNING: log]: Not Found: /images/mic.gif
+[2022-12-18 07:18:01,318: WARNING: log]: Not Found: /my_def_in_view
+[2022-12-18 07:19:28,011: WARNING: log]: Not Found: /images/mic-slash.gif
+[2022-12-18 07:19:28,343: WARNING: log]: Not Found: /mg_poc/static/images/mic-animation.gif
+[2022-12-18 07:19:33,178: WARNING: log]: Not Found: /my_def_in_view
+[2022-12-18 07:19:33,334: WARNING: log]: Not Found: /images/mic.gif
+[2022-12-18 07:22:40,918: WARNING: log]: Not Found: /mg_poc/static/images/mic-animation.gif
+[2022-12-18 07:22:48,590: WARNING: log]: Not Found: /mg_poc/static/images/mic-animation.gif
+[2022-12-18 07:22:49,063: WARNING: log]: Not Found: /images/mic.gif
+[2022-12-18 07:22:49,532: WARNING: log]: Not Found: /images/mic-slash.gif
+[2022-12-18 07:22:49,587: WARNING: log]: Not Found: /mg_poc/static/images/mic-animation.gif
+[2022-12-18 07:22:52,171: WARNING: log]: Not Found: /images/mic.gif
+[2022-12-18 07:22:57,621: WARNING: log]: Not Found: /images/mic.gif
+[2022-12-18 07:23:29,116: WARNING: log]: Not Found: /images/mic-slash.gif
+[2022-12-18 07:23:29,814: WARNING: log]: Not Found: /mg_poc/static/images/mic-animation.gif
+[2022-12-18 07:25:05,059: WARNING: log]: Not Found: /owa/auth/logon.aspx
+[2022-12-18 07:25:34,721: INFO: views]: >>>>>Hello I am Kishore<<<<<
+
+
+
+[2022-12-18 07:26:30,759: INFO: views]: >>>>>Hello I am Kishore<<<<<
+
+
+
+[2022-12-18 07:28:44,759: INFO: views]: >>>>>I need starting<<<<<
+
+
+
+[2022-12-18 07:31:55,164: INFO: views]: >>>>>I need radiator<<<<<
+
+
+
+[2022-12-18 07:31:56,426: ERROR: log]: Internal Server Error: /my_def_in_view
+Traceback (most recent call last):
+  File "/root/envs2/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/root/envs2/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/root/envs2/lib/python3.6/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/root/envs2/lib/python3.6/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/root/envs2/lib/python3.6/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/root/mg_poc/mainapp/views.py", line 91, in search
+    return JsonResponse({"Query_Text":text_query, "Search_Result":final_df})
+  File "/root/envs2/lib/python3.6/site-packages/django/http/response.py", line 605, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+  File "/usr/lib/python3.6/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/usr/lib/python3.6/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.6/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/root/envs2/lib/python3.6/site-packages/django/core/serializers/json.py", line 105, in default
+    return super().default(o)
+  File "/usr/lib/python3.6/json/encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'DataFrame' is not JSON serializable
+[2022-12-18 07:32:02,897: INFO: views]: >>>>>I need radiator<<<<<
+
+
+
+[2022-12-18 07:32:04,258: ERROR: log]: Internal Server Error: /my_def_in_view
+Traceback (most recent call last):
+  File "/root/envs2/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/root/envs2/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/root/envs2/lib/python3.6/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/root/envs2/lib/python3.6/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/root/envs2/lib/python3.6/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/root/mg_poc/mainapp/views.py", line 91, in search
+    return JsonResponse({"Query_Text":text_query, "Search_Result":final_df})
+  File "/root/envs2/lib/python3.6/site-packages/django/http/response.py", line 605, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+  File "/usr/lib/python3.6/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/usr/lib/python3.6/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.6/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/root/envs2/lib/python3.6/site-packages/django/core/serializers/json.py", line 105, in default
+    return super().default(o)
+  File "/usr/lib/python3.6/json/encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'DataFrame' is not JSON serializable
+[2022-12-18 07:36:37,757: INFO: views]: >>>>>I need radiator<<<<<
+
+
+
+[2022-12-18 07:38:26,865: INFO: views]: >>>>>I need show<<<<<
+
+
+
+[2022-12-18 07:39:45,111: INFO: views]: >>>>>I need Kishore<<<<<
+
+
+
+[2022-12-18 07:45:49,501: INFO: views]: >>>>>My name is Shambhu Baba heroine<<<<<
+
+
+
+[2022-12-18 07:48:38,263: WARNING: log]: Not Found: /function URL() { [native code] }
+[2022-12-18 07:50:02,521: INFO: views]: >>>>>My name is Sharma<<<<<
+
+
+
+[2022-12-18 07:54:30,677: WARNING: log]: Not Found: /function URL() { [native code] }
+[2022-12-18 07:54:50,178: WARNING: log]: Not Found: /function URL() { [native code] }
+[2022-12-18 07:58:45,730: INFO: views]: >>>>>Hello I am Kishore<<<<<
+
+
+
+[2022-12-18 07:58:46,912: ERROR: log]: Internal Server Error: /my_def_in_view
+Traceback (most recent call last):
+  File "/root/envs2/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/root/envs2/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/root/envs2/lib/python3.6/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/root/envs2/lib/python3.6/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/root/envs2/lib/python3.6/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/root/mg_poc/mainapp/views.py", line 92, in search
+    return render("index.html",{"Query_Text":text_query, "Search_Result":final_df})
+  File "/root/envs2/lib/python3.6/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/envs2/lib/python3.6/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/envs2/lib/python3.6/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/root/envs2/lib/python3.6/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/root/envs2/lib/python3.6/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/root/envs2/lib/python3.6/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/root/envs2/lib/python3.6/site-packages/django/template/loaders/base.py", line 18, in get_template
+    for origin in self.get_template_sources(template_name):
+  File "/root/envs2/lib/python3.6/site-packages/django/template/loaders/filesystem.py", line 36, in get_template_sources
+    name = safe_join(template_dir, template_name)
+  File "/root/envs2/lib/python3.6/site-packages/django/utils/_os.py", line 17, in safe_join
+    final_path = abspath(join(base, *paths))
+  File "/usr/lib/python3.6/posixpath.py", line 94, in join
+    genericpath._check_arg_types('join', a, *p)
+  File "/usr/lib/python3.6/genericpath.py", line 149, in _check_arg_types
+    (funcname, s.__class__.__name__)) from None
+TypeError: join() argument must be str or bytes, not 'dict'
+[2022-12-18 08:01:19,846: INFO: views]: >>>>>I need sharing<<<<<
+
+
+
+[2022-12-18 08:05:31,237: WARNING: log]: Not Found: /eIfH
+[2022-12-18 08:06:36,692: INFO: views]: >>>>>I need steering<<<<<
+
+
+
+[2022-12-18 08:06:37,912: ERROR: log]: Internal Server Error: /my_def_in_view
+Traceback (most recent call last):
+  File "/root/envs2/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/root/envs2/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/root/envs2/lib/python3.6/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/root/envs2/lib/python3.6/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/root/envs2/lib/python3.6/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/root/mg_poc/mainapp/views.py", line 92, in search
+    return HttpResponse(final_df)
+NameError: name 'HttpResponse' is not defined
+[2022-12-18 08:06:59,860: INFO: views]: >>>>>I need starring<<<<<
+
+
+
+[2022-12-18 08:07:01,056: ERROR: log]: Internal Server Error: /my_def_in_view
+Traceback (most recent call last):
+  File "/root/envs2/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/root/envs2/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/root/envs2/lib/python3.6/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/root/envs2/lib/python3.6/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/root/envs2/lib/python3.6/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/root/mg_poc/mainapp/views.py", line 92, in search
+    return HttpResponse(final_df)
+NameError: name 'HttpResponse' is not defined
+[2022-12-18 08:07:39,643: INFO: views]: >>>>>I need caring<<<<<
+
+
+
+[2022-12-18 08:07:40,717: ERROR: log]: Internal Server Error: /my_def_in_view
+Traceback (most recent call last):
+  File "/root/envs2/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/root/envs2/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/root/envs2/lib/python3.6/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/root/envs2/lib/python3.6/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/root/envs2/lib/python3.6/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/root/mg_poc/mainapp/views.py", line 92, in search
+    return HttpResponse(final_df)
+NameError: name 'HttpResponse' is not defined
+[2022-12-18 08:09:08,579: INFO: views]: >>>>>Steering<<<<<
+
+
+
+[2022-12-18 08:09:12,733: INFO: views]: >>>>>Steering<<<<<
+
+
+
+[2022-12-18 08:10:51,058: INFO: views]: >>>>>Staring at radiator<<<<<
+
+
+
+[2022-12-18 08:12:05,762: INFO: views]: >>>>>Which Terracotta radiator<<<<<
+
+
+
+[2022-12-18 08:15:23,087: INFO: views]: >>>>>I need radiator<<<<<
+
+
+
+[2022-12-18 08:18:10,681: INFO: views]: >>>>>Hello I am Kishore<<<<<
+
+
+
+[2022-12-18 08:19:30,424: INFO: views]: >>>>>I am Kishore<<<<<
+
+
+
+[2022-12-18 08:20:03,285: INFO: views]: >>>>>My name is Kishore<<<<<
+
+
+
+[2022-12-18 08:22:31,594: WARNING: log]: Not Found: /
+[2022-12-18 08:22:52,329: WARNING: log]: Not Found: /
+[2022-12-18 08:23:04,172: INFO: views]: >>>>>My name is Kishore<<<<<
+
+
+
+[2022-12-18 08:24:07,206: INFO: views]: >>>>>My name is Kishore<<<<<
+
+
+
+[2022-12-18 08:25:17,368: INFO: views]: >>>>>My name is Kishore<<<<<
+
+
+
+[2022-12-18 08:26:05,027: INFO: views]: >>>>>My name is Kishore<<<<<
+
+
+
+[2022-12-18 08:26:06,303: ERROR: log]: Internal Server Error: /my_def_in_view
+Traceback (most recent call last):
+  File "/root/envs2/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/root/envs2/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/rest_framework/views.py", line 511, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/rest_framework/views.py", line 426, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+[2022-12-18 08:28:43,039: INFO: views]: >>>>>I need charging<<<<<
+
+
+
+[2022-12-18 08:37:14,720: WARNING: log]: Not Found: /
+[2022-12-18 08:37:23,503: WARNING: log]: Not Found: /PQSh
+[2022-12-18 08:37:34,839: WARNING: log]: Not Found: /^my_def_in_view
+[2022-12-18 08:38:04,215: INFO: views]: >>>>>Hello I am Kishore<<<<<
+
+
+
+[2022-12-18 08:38:23,859: WARNING: log]: Not Found: /.env
+[2022-12-18 08:39:53,907: INFO: views]: >>>>>Hello I am Kishore<<<<<
+
+
+
+[2022-12-18 08:45:38,843: INFO: views]: >>>>>Hello I am Kishore<<<<<
+
+
+
+[2022-12-18 08:48:42,127: INFO: views]: >>>>>My name is Kishore<<<<<
+
+
+
+[2022-12-18 08:48:43,282: ERROR: log]: Internal Server Error: /my_def_in_view
+Traceback (most recent call last):
+  File "/root/envs2/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/root/envs2/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/root/envs2/lib/python3.6/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/root/envs2/lib/python3.6/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/root/envs2/lib/python3.6/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/root/mg_poc/mainapp/views.py", line 95, in search
+    return redirect("")
+  File "/root/envs2/lib/python3.6/site-packages/django/shortcuts.py", line 41, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "/root/envs2/lib/python3.6/site-packages/django/shortcuts.py", line 130, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/django/urls/base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/django/urls/resolvers.py", line 698, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for '' not found. '' is not a valid view function or pattern name.
+[2022-12-18 08:49:21,772: INFO: views]: >>>>>My name is Kishore<<<<<
+
+
+
+[2022-12-18 08:51:19,490: INFO: views]: >>>>>My name is Kishore<<<<<
+
+
+
+[2022-12-18 08:52:59,929: INFO: views]: >>>>>Name is Kishore<<<<<
+
+
+
+[2022-12-18 08:53:05,116: INFO: views]: >>>>>Name is Kishore<<<<<
+
+
+
+[2022-12-18 08:59:30,721: INFO: views]: >>>>>I need radiator<<<<<
+
+
+
+[2022-12-18 09:00:31,888: INFO: views]: >>>>>I am Kishore having a car Tesla<<<<<
+
+
+
+[2022-12-18 09:03:47,919: WARNING: log]: Not Found: /
+[2022-12-18 09:04:03,664: WARNING: log]: Not Found: /
+[2022-12-18 09:08:03,988: WARNING: log]: Not Found: /my_def_in_view
+[2022-12-18 09:08:09,270: ERROR: log]: Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/envs2/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/root/envs2/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/root/envs2/lib/python3.6/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/root/envs2/lib/python3.6/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/root/envs2/lib/python3.6/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/root/mg_poc/mainapp/views.py", line 72, in home
+    redirect("search")
+  File "/root/envs2/lib/python3.6/site-packages/django/shortcuts.py", line 41, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "/root/envs2/lib/python3.6/site-packages/django/shortcuts.py", line 130, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/django/urls/base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/django/urls/resolvers.py", line 698, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'search' not found. 'search' is not a valid view function or pattern name.
+[2022-12-18 09:08:09,602: ERROR: log]: Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/envs2/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/root/envs2/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/root/envs2/lib/python3.6/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/root/envs2/lib/python3.6/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/root/envs2/lib/python3.6/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/root/mg_poc/mainapp/views.py", line 72, in home
+    redirect("search")
+  File "/root/envs2/lib/python3.6/site-packages/django/shortcuts.py", line 41, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "/root/envs2/lib/python3.6/site-packages/django/shortcuts.py", line 130, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/django/urls/base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/django/urls/resolvers.py", line 698, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'search' not found. 'search' is not a valid view function or pattern name.
+[2022-12-18 09:09:07,110: ERROR: log]: Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/envs2/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/root/envs2/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/root/envs2/lib/python3.6/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/root/envs2/lib/python3.6/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/root/envs2/lib/python3.6/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/root/mg_poc/mainapp/views.py", line 72, in home
+    redirect("search")
+  File "/root/envs2/lib/python3.6/site-packages/django/shortcuts.py", line 41, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "/root/envs2/lib/python3.6/site-packages/django/shortcuts.py", line 130, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/django/urls/base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/django/urls/resolvers.py", line 698, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'search' not found. 'search' is not a valid view function or pattern name.
+[2022-12-18 09:11:05,002: ERROR: log]: Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/envs2/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/root/envs2/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/rest_framework/views.py", line 511, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/rest_framework/views.py", line 426, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+[2022-12-18 09:11:20,538: ERROR: log]: Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/envs2/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/root/envs2/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/rest_framework/views.py", line 511, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/rest_framework/views.py", line 426, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+[2022-12-18 09:12:01,930: WARNING: log]: Not Found: /search
+[2022-12-18 09:12:46,331: WARNING: log]: Not Found: /my_def_in_view
+[2022-12-18 09:12:59,602: INFO: views]: >>>>>My name is Kishore<<<<<
+
+
+
+[2022-12-18 09:13:15,367: WARNING: log]: Not Found: /my_def_in_view
+[2022-12-18 09:13:28,870: WARNING: log]: Not Found: /my_def_in_view
+[2022-12-18 09:15:02,893: INFO: views]: >>>>>Hello my name is Kishore<<<<<
+
+
+
+[2022-12-18 09:17:24,843: INFO: views]: >>>>>My name is Kishore<<<<<
+
+
+
+[2022-12-18 09:18:53,005: INFO: views]: >>>>>My name is Kishore<<<<<
+
+
+
+[2022-12-18 09:21:00,554: INFO: views]: >>>>>Hi I am Kishore<<<<<
+
+
+
+[2022-12-18 09:27:53,724: INFO: views]: >>>>>Hi I am Kishore<<<<<
+
+
+
+[2022-12-18 09:34:15,760: INFO: views]: >>>>>Kishore<<<<<
+
+
+
+[2022-12-18 09:35:11,575: INFO: views]: >>>>>Hello I am Kishore<<<<<
+
+
+
+[2022-12-18 09:35:57,309: INFO: views]: >>>>>I am Kishore<<<<<
+
+
+
+[2022-12-18 09:37:27,284: INFO: views]: >>>>>Hi I am Kishore<<<<<
+
+
+
+[2022-12-18 09:41:46,495: INFO: views]: >>>>><<<<<
+
+
+
+[2022-12-18 09:42:42,650: INFO: views]: >>>>>Hi Amrita<<<<<
+
+
+
+[2022-12-18 09:44:31,889: INFO: views]: >>>>><<<<<
+
+
+
+[2022-12-18 09:44:43,708: INFO: views]: >>>>>Kishore<<<<<
+
+
+
+[2022-12-18 09:46:53,543: INFO: views]: >>>>>Kishore<<<<<
+
+
+
+[2022-12-18 09:49:02,048: INFO: views]: >>>>>Hi I am sure<<<<<
+
+
+
+[2022-12-18 09:50:33,542: INFO: views]: >>>>>I am Kishore<<<<<
+
+
+
+[2022-12-18 09:55:27,010: INFO: views]: >>>>>I am Kishore<<<<<
+
+
+
+[2022-12-18 10:03:57,138: INFO: views]: >>>>>Kishore<<<<<
+
+
+
+[2022-12-18 10:05:17,345: INFO: views]: >>>>>Kishore<<<<<
+
+
+
+[2022-12-18 10:06:08,521: INFO: views]: >>>>>Name is Kishore<<<<<
+
+
+
+[2022-12-18 10:06:46,287: INFO: views]: >>>>>Kishore<<<<<
+
+
+
+[2022-12-18 10:09:11,611: INFO: views]: >>>>>Hello<<<<<
+
+
+
+[2022-12-18 10:10:57,931: INFO: views]: >>>>>Name is Kishore<<<<<
+
+
+
+[2022-12-18 10:11:45,755: INFO: views]: >>>>>My name is Kishore<<<<<
+
+
+
+[2022-12-18 10:18:32,922: INFO: views]: >>>>>Hello I am Kishore<<<<<
+
+
+
+[2022-12-18 10:19:26,045: INFO: views]: >>>>>I am Kishore<<<<<
+
+
+
+[2022-12-18 10:19:33,760: WARNING: log]: Unsupported Media Type: /search
+[2022-12-18 10:20:47,326: INFO: views]: >>>>>Hello I am busy<<<<<
+
+
+
+[2022-12-18 10:21:40,332: INFO: views]: >>>>>Hello<<<<<
+
+
+
+[2022-12-18 10:29:16,922: WARNING: log]: Not Found: /robots.txt
+[2022-12-18 10:29:25,293: WARNING: log]: Not Found: /sitemap.xml
+[2022-12-18 10:33:56,968: INFO: views]: >>>>>My name is Kishore<<<<<
+
+
+
+[2022-12-18 10:35:17,275: INFO: views]: >>>>>Hello<<<<<
+
+
+
+[2022-12-18 10:40:50,281: INFO: views]: >>>>>I am Kishore<<<<<
+
+
+
+[2022-12-18 10:47:59,722: WARNING: log]: Method Not Allowed: /search
+[2022-12-18 10:48:49,587: INFO: views]: >>>>>Hello<<<<<
+
+
+
+[2022-12-18 10:48:57,587: WARNING: log]: Method Not Allowed: /search
+[2022-12-18 10:50:05,496: INFO: views]: >>>>>Hello<<<<<
+
+
+
+[2022-12-18 10:50:09,209: ERROR: log]: Internal Server Error: /search
+Traceback (most recent call last):
+  File "/root/envs2/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/root/envs2/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/rest_framework/views.py", line 511, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/rest_framework/views.py", line 426, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+[2022-12-18 10:51:21,982: INFO: views]: >>>>>Hello<<<<<
+
+
+
+[2022-12-18 10:51:33,398: WARNING: log]: Method Not Allowed: /search
+[2022-12-18 10:53:21,378: INFO: views]: >>>>>Hello<<<<<
+
+
+
+[2022-12-18 10:53:29,124: WARNING: log]: Method Not Allowed: /search
+[2022-12-18 10:54:34,131: INFO: views]: >>>>>Hello<<<<<
+
+
+
+[2022-12-18 10:54:42,152: WARNING: log]: Method Not Allowed: /search
+[2022-12-18 10:58:46,423: ERROR: log]: Internal Server Error: /search
+Traceback (most recent call last):
+  File "/root/envs2/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/root/envs2/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/rest_framework/views.py", line 511, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/rest_framework/views.py", line 426, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+[2022-12-18 11:00:59,840: WARNING: log]: Not Found: ///3c625c27b4da33d3d5c12e8d02104755/js/login.js
+[2022-12-18 11:02:21,896: INFO: views]: >>>>>Hello<<<<<
+
+
+
+[2022-12-18 11:02:30,117: ERROR: log]: Internal Server Error: /search
+Traceback (most recent call last):
+  File "/root/envs2/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/root/envs2/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/root/envs2/lib/python3.6/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/root/envs2/lib/python3.6/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/root/envs2/lib/python3.6/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/root/mg_poc/mainapp/views.py", line 79, in search
+    return  jsonResponse({"result":"db"})
+NameError: name 'jsonResponse' is not defined
+[2022-12-18 11:03:20,970: INFO: views]: >>>>>Hello<<<<<
+
+
+
+[2022-12-18 11:05:38,931: INFO: views]: >>>>>Hello<<<<<
+
+
+
+[2022-12-18 11:05:43,475: ERROR: log]: Internal Server Error: /search
+Traceback (most recent call last):
+  File "/root/envs2/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/root/envs2/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/root/envs2/lib/python3.6/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/root/envs2/lib/python3.6/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/root/envs2/lib/python3.6/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/root/mg_poc/mainapp/views.py", line 79, in search
+    return  JsonResponse(context)
+UnboundLocalError: local variable 'context' referenced before assignment
+[2022-12-18 11:10:21,660: INFO: views]: >>>>>Hello<<<<<
+
+
+
+[2022-12-18 11:10:26,438: ERROR: log]: Internal Server Error: /search
+Traceback (most recent call last):
+  File "/root/envs2/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/root/envs2/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/root/envs2/lib/python3.6/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/root/envs2/lib/python3.6/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/root/envs2/lib/python3.6/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/root/mg_poc/mainapp/views.py", line 82, in search
+    return  JsonResponse(data)
+  File "/root/envs2/lib/python3.6/site-packages/django/http/response.py", line 599, in __init__
+    'In order to allow non-dict objects to be serialized set the '
+TypeError: In order to allow non-dict objects to be serialized set the safe parameter to False.
+[2022-12-18 11:12:22,619: INFO: views]: >>>>>Hello<<<<<
+
+
+
+[2022-12-18 11:13:06,346: INFO: views]: >>>>>I need radiator<<<<<
+
+
+
+[2022-12-18 11:15:24,256: INFO: views]: >>>>>Hello<<<<<
+
+
+
+[2022-12-18 11:16:28,051: INFO: views]: >>>>>Hello<<<<<
+
+
+
+[2022-12-18 11:16:46,701: INFO: views]: >>>>>I need a radiator<<<<<
+
+
+
+[2022-12-18 11:17:55,797: INFO: views]: >>>>>I need radiator and battery<<<<<
+
+
+
+[2022-12-18 11:19:28,794: INFO: views]: >>>>>I need radiator and battery<<<<<
+
+
+
+[2022-12-18 11:19:32,228: ERROR: log]: Internal Server Error: /search
+Traceback (most recent call last):
+  File "/root/envs2/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/root/envs2/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/root/envs2/lib/python3.6/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/root/envs2/lib/python3.6/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/root/envs2/lib/python3.6/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/root/mg_poc/mainapp/views.py", line 82, in search
+    for i in data['root']:
+KeyError: 'root'
+[2022-12-18 11:21:18,508: ERROR: log]: Internal Server Error: /search
+Traceback (most recent call last):
+  File "/root/envs2/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/root/envs2/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/root/envs2/lib/python3.6/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/root/envs2/lib/python3.6/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/root/envs2/lib/python3.6/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/root/envs2/lib/python3.6/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/root/mg_poc/mainapp/views.py", line 84, in search
+    return  JsonResponse(data)
+  File "/root/envs2/lib/python3.6/site-packages/django/http/response.py", line 599, in __init__
+    'In order to allow non-dict objects to be serialized set the '
+TypeError: In order to allow non-dict objects to be serialized set the safe parameter to False.
+[2022-12-18 11:21:18,738: INFO: views]: >>>>>I need radiator and battery<<<<<
+
+
+
+[2022-12-18 11:22:17,435: INFO: views]: >>>>>I need radiator and battery<<<<<
+
+
+
+[2022-12-18 11:23:51,264: INFO: views]: >>>>>I need radiator and battery<<<<<
+
+
+
+[2022-12-18 11:25:37,272: INFO: views]: >>>>>I need radiator and battery<<<<<
+
+
+
+[2022-12-18 11:26:19,691: INFO: views]: >>>>>I need radiator and battery<<<<<
+
+
+
+[2022-12-18 11:26:43,897: INFO: views]: >>>>>Radiator under part 3<<<<<
+
+
+
+[2022-12-18 11:27:04,347: INFO: views]: >>>>>Radiator and battery<<<<<
+
+
+
+[2022-12-18 11:28:02,075: INFO: views]: >>>>>I need radiator and battery<<<<<
+
+
+
+[2022-12-18 11:32:56,238: INFO: views]: >>>>>I need a radiator<<<<<
+
+
+
+[2022-12-18 11:34:14,798: INFO: views]: >>>>>I need a radiator<<<<<
+
+
+
+[2022-12-18 11:35:29,162: INFO: views]: >>>>>I need radiator<<<<<
+
+
+
+[2022-12-18 11:36:23,977: INFO: views]: >>>>>I need a radiator<<<<<
+
+
+
+[2022-12-18 11:38:12,491: INFO: views]: >>>>>I need a radiator and battery<<<<<
+
+
+
+[2022-12-18 11:40:31,651: INFO: views]: >>>>>I need radiator and battery<<<<<
+
+
+
+[2022-12-18 11:41:40,562: INFO: views]: >>>>>I need radiator and battery<<<<<
+
+
+
+[2022-12-18 11:42:53,386: INFO: views]: >>>>>I need battery and radiator<<<<<
+
+
+
+[2022-12-18 11:51:35,405: INFO: views]: >>>>>I need radiator and battery<<<<<
+
+
+
+[2022-12-18 11:52:45,375: INFO: views]: >>>>><<<<<
+
+
+
+[2022-12-18 11:53:06,164: INFO: views]: >>>>>I need radiator and battery<<<<<
+
+
+
+[2022-12-18 11:53:56,226: INFO: views]: >>>>>Teri Yadon battery<<<<<
+
+
+
+[2022-12-18 11:54:07,025: INFO: views]: >>>>>I need a leader battery<<<<<
+
+
+

@@ -1,7 +1,9 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect
 import pandas as pd
+from django.http.response import JsonResponse
 from rest_framework import status
 from rest_framework.decorators import api_view
+from django.http import HttpResponse
 from .models import voicesearch
 from rest_framework.response import Response
 from .helper import voiceSerializer
@@ -15,11 +17,19 @@ import spacy
 from spacy.matcher import PhraseMatcher
 import numpy as np
 import os
+import logging
+import json
 nltk.download('punkt')
 nltk.download('stopwords')
 nlp = spacy.load("en_core_web_sm")
-
+global context
 # Create your views here.
+logging.basicConfig(
+    filename=os.path.join("logs", 'running_logs.log'), 
+    level=logging.INFO, 
+    format="[%(asctime)s: %(levelname)s: %(module)s]: %(message)s",
+    filemode="a"
+    )
 
 def preprocess(words):
         word_tokens_1 = word_tokenize(words)
@@ -57,25 +67,40 @@ def checking(text,df):
             return  value
         else:
             return 0
+        
+@api_view(['GET'])
+def home(request):
+    return render(request,"index.html")
+
 @api_view(['GET', 'POST'])
 def search(request):
-    if request.method == 'GET':
-        # db = voicesearch.objects.all()
-        # serializer=voiceSerializer(db,many=True)
-        return  render(request, 'index.html')
-    elif request.method == 'POST':
-        db = voicesearch.objects.all().values()
-        df=pd.DataFrame(list(db))
-        df=df.drop(["id"],axis=1)
-        text_query=request.data['text']
-        text=preprocess(text_query)
-        final=checking(text,df)
-        print(final)
-        if final==0:
-            final_df="Please try rephrasing or update the data"
-        else:
-            print
-            final_df=pd.DataFrame(final,columns=["Part_Name","Location","Quantity"])
-        #serializer=voiceSerializer(next(iter(final)),many=True)
-        field=["Part_Name","Location","Quantity"]
-        return Response({"Query_Text":text_query, "Search_Result":final_df})
+        if request.method == 'GET':
+            #db = voicesearch.objects.all().values()
+            #serializer=voiceSerializer(db,many=True)
+            f = open('data.json')
+            data = json.load(f)
+            # for i in data['result']:
+            #     data=i
+            return  JsonResponse(data)
+        elif request.method == 'POST': 
+            logging.info(f">>>>>{request.data['result']}<<<<<\n\n\n")
+            db = voicesearch.objects.all().values()
+            df=pd.DataFrame(list(db))
+            df=df.drop(["id"],axis=1)
+            text_query=request.data['result']
+            text=preprocess(text_query)
+            final=checking(text,df)
+            print(final)
+            if final==0:
+                final_df="Please try rephrasing or update the data"
+            else:
+                final_df=pd.DataFrame(final,columns=["Part_Name","Location","Quantity"])
+                final_df = final_df.to_json()
+            #serializer=voiceSerializer(next(iter(final)),many=True)
+            #field=["Part_Name","Location","Quantity"]
+            print(final_df,text_query,"$$$$$$$$$$$$$$")
+            context={"result" :[{"Query_Text":text_query, "Search_Result":final_df}]}
+            with open('data.json', 'w') as f:
+                json.dump(context, f)
+            #return Response(final_df)
+            return JsonResponse(context)
