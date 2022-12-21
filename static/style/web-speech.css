@@ -1,3 +1,7 @@
+/* main{
+    background: rgb(243,255,254);
+    background: linear-gradient(90deg, rgba(243,255,254,1) 0%, rgba(0,237,255,0.7346288857339811) 100%);
+} */
 #info a {
   color: darkred;
   text-decoration: underline;
@@ -13,10 +17,10 @@
 #results {
   font-size: 14px;
   font-weight: bold;
-  border: 1px solid #ddd;
+  border: 5px solid #ddd;
   padding: 15px;
   text-align: left;
-  min-height: 150px;
+  min-height: 250px;
   margin: 0 0 20px 0;
 }
 #start_button {

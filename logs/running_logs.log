@@ -1370,3 +1370,303 @@ TypeError: In order to allow non-dict objects to be serialized set the safe para
 
 
 
+[2022-12-18 18:19:22,980: WARNING: log]: Not Found: /Yy8R
+[2022-12-18 18:19:23,657: WARNING: log]: Not Found: /Tfk8
+[2022-12-18 19:05:00,007: WARNING: log]: Not Found: /actuator/gateway/routes
+[2022-12-18 19:41:17,244: WARNING: log]: Not Found: /Nh4r
+[2022-12-18 20:27:55,542: WARNING: log]: Not Found: /remote/fgt_lang
+[2022-12-18 21:21:07,917: WARNING: log]: Not Found: /.env
+[2022-12-18 21:21:08,858: WARNING: log]: Method Not Allowed: /
+[2022-12-18 21:21:09,812: WARNING: log]: Not Found: /core/.env
+[2022-12-18 21:21:10,778: WARNING: log]: Not Found: /core/.env
+[2022-12-18 21:21:11,762: WARNING: log]: Method Not Allowed: /
+[2022-12-18 21:21:12,504: WARNING: log]: Not Found: /.env
+[2022-12-18 21:21:12,728: WARNING: log]: Not Found: /core/.env
+[2022-12-18 21:21:13,490: WARNING: log]: Method Not Allowed: /
+[2022-12-18 21:21:14,440: WARNING: log]: Not Found: /core/.env
+[2022-12-18 21:21:15,392: WARNING: log]: Not Found: /core/.env
+[2022-12-18 21:21:16,342: WARNING: log]: Method Not Allowed: /
+[2022-12-18 21:21:17,332: WARNING: log]: Not Found: /core/.env
+[2022-12-18 21:21:20,646: WARNING: log]: Not Found: /.env
+[2022-12-18 21:21:21,599: WARNING: log]: Method Not Allowed: /
+[2022-12-18 21:21:22,581: WARNING: log]: Not Found: /core/.env
+[2022-12-18 21:21:23,561: WARNING: log]: Not Found: /core/.env
+[2022-12-18 21:21:24,510: WARNING: log]: Method Not Allowed: /
+[2022-12-18 21:21:25,463: WARNING: log]: Not Found: /core/.env
+[2022-12-18 21:22:20,608: WARNING: log]: Not Found: /.env
+[2022-12-18 21:22:21,576: WARNING: log]: Method Not Allowed: /
+[2022-12-18 21:22:22,541: WARNING: log]: Not Found: /core/.env
+[2022-12-18 21:22:23,507: WARNING: log]: Not Found: /core/.env
+[2022-12-18 21:22:24,478: WARNING: log]: Method Not Allowed: /
+[2022-12-18 21:22:25,429: WARNING: log]: Not Found: /core/.env
+[2022-12-18 21:23:47,470: WARNING: log]: Not Found: /.env
+[2022-12-18 21:23:48,436: WARNING: log]: Method Not Allowed: /
+[2022-12-18 21:23:49,415: WARNING: log]: Not Found: /core/.env
+[2022-12-18 21:23:50,415: WARNING: log]: Not Found: /core/.env
+[2022-12-18 21:23:51,400: WARNING: log]: Method Not Allowed: /
+[2022-12-18 21:23:52,382: WARNING: log]: Not Found: /core/.env
+[2022-12-19 02:07:18,540: ERROR: exception]: Invalid HTTP_HOST header: 'mg-voicesearch.sonofsoil.co.in'. You may need to add 'mg-voicesearch.sonofsoil.co.in' to ALLOWED_HOSTS.
+[2022-12-19 02:07:18,588: WARNING: log]: Bad Request: /
+[2022-12-19 02:07:23,886: ERROR: exception]: Invalid HTTP_HOST header: 'mg-voicesearch.sonofsoil.co.in'. You may need to add 'mg-voicesearch.sonofsoil.co.in' to ALLOWED_HOSTS.
+[2022-12-19 02:07:23,926: WARNING: log]: Bad Request: /
+[2022-12-19 02:07:25,731: ERROR: exception]: Invalid HTTP_HOST header: 'mg-voicesearch.sonofsoil.co.in'. You may need to add 'mg-voicesearch.sonofsoil.co.in' to ALLOWED_HOSTS.
+[2022-12-19 02:07:25,767: WARNING: log]: Bad Request: /
+[2022-12-19 02:07:32,853: ERROR: exception]: Invalid HTTP_HOST header: 'mg-voicesearch.sonofsoil.co.in'. You may need to add 'mg-voicesearch.sonofsoil.co.in' to ALLOWED_HOSTS.
+[2022-12-19 02:07:32,856: ERROR: exception]: Invalid HTTP_HOST header: 'mg-voicesearch.sonofsoil.co.in'. You may need to add 'mg-voicesearch.sonofsoil.co.in' to ALLOWED_HOSTS.
+[2022-12-19 02:07:32,871: ERROR: exception]: Invalid HTTP_HOST header: 'mg-voicesearch.sonofsoil.co.in'. You may need to add 'mg-voicesearch.sonofsoil.co.in' to ALLOWED_HOSTS.
+[2022-12-19 02:07:32,902: WARNING: log]: Bad Request: /
+[2022-12-19 02:07:32,903: ERROR: exception]: Invalid HTTP_HOST header: 'mg-voicesearch.sonofsoil.co.in'. You may need to add 'mg-voicesearch.sonofsoil.co.in' to ALLOWED_HOSTS.
+[2022-12-19 02:07:32,916: WARNING: log]: Bad Request: /.env
+[2022-12-19 02:07:32,930: ERROR: exception]: Invalid HTTP_HOST header: 'mg-voicesearch.sonofsoil.co.in'. You may need to add 'mg-voicesearch.sonofsoil.co.in' to ALLOWED_HOSTS.
+[2022-12-19 02:07:32,947: WARNING: log]: Bad Request: /.git/config
+[2022-12-19 02:07:32,954: ERROR: exception]: Invalid HTTP_HOST header: 'mg-voicesearch.sonofsoil.co.in'. You may need to add 'mg-voicesearch.sonofsoil.co.in' to ALLOWED_HOSTS.
+[2022-12-19 02:07:32,956: WARNING: log]: Bad Request: /
+[2022-12-19 02:07:32,965: ERROR: exception]: Invalid HTTP_HOST header: 'mg-voicesearch.sonofsoil.co.in'. You may need to add 'mg-voicesearch.sonofsoil.co.in' to ALLOWED_HOSTS.
+[2022-12-19 02:07:33,018: WARNING: log]: Bad Request: /info.php
+[2022-12-19 02:07:33,008: WARNING: log]: Bad Request: /s/8323e2833313e2434323e2334313/_/;/META-INF/maven/com.atlassian.jira/jira-webapp-dist/pom.properties
+[2022-12-19 02:07:33,020: ERROR: exception]: Invalid HTTP_HOST header: 'mg-voicesearch.sonofsoil.co.in'. You may need to add 'mg-voicesearch.sonofsoil.co.in' to ALLOWED_HOSTS.
+[2022-12-19 02:07:33,022: ERROR: exception]: Invalid HTTP_HOST header: 'mg-voicesearch.sonofsoil.co.in'. You may need to add 'mg-voicesearch.sonofsoil.co.in' to ALLOWED_HOSTS.
+[2022-12-19 02:07:33,043: WARNING: log]: Bad Request: /server-status
+[2022-12-19 02:07:33,045: ERROR: exception]: Invalid HTTP_HOST header: 'mg-voicesearch.sonofsoil.co.in'. You may need to add 'mg-voicesearch.sonofsoil.co.in' to ALLOWED_HOSTS.
+[2022-12-19 02:07:33,087: WARNING: log]: Bad Request: /ecp/Current/exporttool/microsoft.exchange.ediscovery.exporttool.application
+[2022-12-19 02:07:33,091: ERROR: exception]: Invalid HTTP_HOST header: 'mg-voicesearch.sonofsoil.co.in'. You may need to add 'mg-voicesearch.sonofsoil.co.in' to ALLOWED_HOSTS.
+[2022-12-19 02:07:33,104: WARNING: log]: Bad Request: /debug/default/view
+[2022-12-19 02:07:33,123: WARNING: log]: Bad Request: /telescope/requests
+[2022-12-19 02:07:33,152: WARNING: log]: Bad Request: /.DS_Store
+[2022-12-19 02:07:33,596: ERROR: exception]: Invalid HTTP_HOST header: 'mg-voicesearch.sonofsoil.co.in'. You may need to add 'mg-voicesearch.sonofsoil.co.in' to ALLOWED_HOSTS.
+[2022-12-19 02:07:33,626: WARNING: log]: Bad Request: /
+[2022-12-19 02:07:33,994: ERROR: exception]: Invalid HTTP_HOST header: 'mg-voicesearch.sonofsoil.co.in'. You may need to add 'mg-voicesearch.sonofsoil.co.in' to ALLOWED_HOSTS.
+[2022-12-19 02:07:33,994: ERROR: exception]: Invalid HTTP_HOST header: 'mg-voicesearch.sonofsoil.co.in'. You may need to add 'mg-voicesearch.sonofsoil.co.in' to ALLOWED_HOSTS.
+[2022-12-19 02:07:34,003: WARNING: log]: Bad Request: /api/search
+[2022-12-19 02:07:34,008: WARNING: log]: Bad Request: /v2/_catalog
+[2022-12-19 02:07:34,017: ERROR: exception]: Invalid HTTP_HOST header: 'mg-voicesearch.sonofsoil.co.in'. You may need to add 'mg-voicesearch.sonofsoil.co.in' to ALLOWED_HOSTS.
+[2022-12-19 02:07:34,018: ERROR: exception]: Invalid HTTP_HOST header: 'mg-voicesearch.sonofsoil.co.in'. You may need to add 'mg-voicesearch.sonofsoil.co.in' to ALLOWED_HOSTS.
+[2022-12-19 02:07:34,034: ERROR: exception]: Invalid HTTP_HOST header: 'mg-voicesearch.sonofsoil.co.in'. You may need to add 'mg-voicesearch.sonofsoil.co.in' to ALLOWED_HOSTS.
+[2022-12-19 02:07:34,057: WARNING: log]: Bad Request: /login.action
+[2022-12-19 02:07:34,088: WARNING: log]: Bad Request: /about
+[2022-12-19 02:07:34,103: WARNING: log]: Bad Request: /config.json
+[2022-12-19 02:08:13,660: ERROR: exception]: Invalid HTTP_HOST header: 'mg-voicesearch.sonofsoil.co.in'. You may need to add 'mg-voicesearch.sonofsoil.co.in' to ALLOWED_HOSTS.
+[2022-12-19 02:08:13,693: WARNING: log]: Bad Request: /.aws/credentials
+[2022-12-19 02:08:14,125: ERROR: exception]: Invalid HTTP_HOST header: 'mg-voicesearch.sonofsoil.co.in'. You may need to add 'mg-voicesearch.sonofsoil.co.in' to ALLOWED_HOSTS.
+[2022-12-19 02:08:14,153: WARNING: log]: Bad Request: /
+[2022-12-19 02:08:16,777: ERROR: exception]: Invalid HTTP_HOST header: 'mg-voicesearch.sonofsoil.co.in'. You may need to add 'mg-voicesearch.sonofsoil.co.in' to ALLOWED_HOSTS.
+[2022-12-19 02:08:16,809: WARNING: log]: Bad Request: /.env
+[2022-12-19 02:08:30,148: ERROR: exception]: Invalid HTTP_HOST header: 'mg-voicesearch.sonofsoil.co.in'. You may need to add 'mg-voicesearch.sonofsoil.co.in' to ALLOWED_HOSTS.
+[2022-12-19 02:08:30,351: WARNING: log]: Bad Request: /
+[2022-12-19 02:22:19,360: ERROR: exception]: Invalid HTTP_HOST header: 'mg-voicesearch.sonofsoil.co.in'. You may need to add 'mg-voicesearch.sonofsoil.co.in' to ALLOWED_HOSTS.
+[2022-12-19 02:22:19,397: WARNING: log]: Bad Request: /
+[2022-12-19 02:23:35,605: INFO: views]: >>>>>Hello my name is Kishore<<<<<
+
+
+
+[2022-12-19 02:23:46,671: INFO: views]: >>>>>I need battery and radiator<<<<<
+
+
+
+[2022-12-19 02:24:01,642: INFO: views]: >>>>>My name is Kishore<<<<<
+
+
+
+[2022-12-19 02:24:13,892: INFO: views]: >>>>>Hello I need battery and radiator<<<<<
+
+
+
+[2022-12-19 02:24:32,962: INFO: views]: >>>>>Hello I need battery radiator and front axle<<<<<
+
+
+
+[2022-12-19 02:25:25,466: INFO: views]: >>>>>Hello my name is Kishore<<<<<
+
+
+
+[2022-12-19 02:25:48,356: INFO: views]: >>>>><<<<<
+
+
+
+[2022-12-19 02:26:00,701: INFO: views]: >>>>>Hello my name is Kishore<<<<<
+
+
+
+[2022-12-19 02:26:14,421: INFO: views]: >>>>>I need battery and radiator<<<<<
+
+
+
+[2022-12-19 02:41:04,442: ERROR: exception]: Invalid HTTP_HOST header: '${ip}:${port}'. The domain name provided is not valid according to RFC 1034/1035.
+[2022-12-19 02:41:04,481: WARNING: log]: Bad Request: /
+[2022-12-19 02:43:30,935: WARNING: log]: Not Found: /apis/apps/v1/namespaces/kube-system/daemonsets/
+[2022-12-19 02:50:31,070: ERROR: exception]: Invalid HTTP_HOST header: 'slotrome.com'. You may need to add 'slotrome.com' to ALLOWED_HOSTS.
+[2022-12-19 02:50:31,110: WARNING: log]: Bad Request: /
+[2022-12-19 03:11:53,573: INFO: views]: >>>>><<<<<
+
+
+
+[2022-12-19 03:12:42,783: INFO: views]: >>>>>Hello<<<<<
+
+
+
+[2022-12-19 03:12:58,558: INFO: views]: >>>>>Battery and battery<<<<<
+
+
+
+[2022-12-19 03:13:17,318: INFO: views]: >>>>>Radiator battery E and battery<<<<<
+
+
+
+[2022-12-19 03:42:43,916: INFO: views]: >>>>>I need starring<<<<<
+
+
+
+[2022-12-19 03:42:58,725: INFO: views]: >>>>>I need radiator<<<<<
+
+
+
+[2022-12-19 03:43:14,866: INFO: views]: >>>>>Steering<<<<<
+
+
+
+[2022-12-19 03:51:05,449: INFO: views]: >>>>><<<<<
+
+
+
+[2022-12-19 03:56:05,355: INFO: views]: >>>>>I need radiator<<<<<
+
+
+
+[2022-12-19 03:56:12,565: INFO: views]: >>>>>I need radiator<<<<<
+
+
+
+[2022-12-19 03:57:35,301: INFO: views]: >>>>>Need radiator?<<<<<
+
+
+
+[2022-12-19 03:59:01,111: INFO: views]: >>>>>I need radiator<<<<<
+
+
+
+[2022-12-19 03:59:21,316: INFO: views]: >>>>>Radiator and battery.<<<<<
+
+
+
+[2022-12-19 03:59:28,769: INFO: views]: >>>>>I need radiator and battery and front axle<<<<<
+
+
+
+[2022-12-19 04:05:00,987: INFO: views]: >>>>>I need radiator and battery.<<<<<
+
+
+
+[2022-12-19 04:26:21,810: INFO: views]: >>>>>Steering and battery<<<<<
+
+
+
+[2022-12-19 04:29:56,764: INFO: views]: >>>>>Steering and battery<<<<<
+
+
+
+[2022-12-19 07:18:59,620: INFO: views]: >>>>>Hi I am looking for brakes and couplers<<<<<
+
+
+
+[2022-12-19 07:19:17,334: INFO: views]: >>>>>Hi I am looking for front axle and back axle<<<<<
+
+
+
+[2022-12-19 07:20:46,486: WARNING: log]: Not Found: /autodiscover/autodiscover.json
+[2022-12-19 07:22:40,651: WARNING: log]: Not Found: /owa/auth/logon.aspx
+[2022-12-19 08:05:22,724: WARNING: log]: Not Found: /G9bz
+[2022-12-19 08:34:07,935: WARNING: log]: Not Found: /remote/fgt_lang
+[2022-12-19 11:16:12,195: INFO: views]: >>>>>Hi I am searching for front axle and back axle<<<<<
+
+
+
+[2022-12-19 11:44:26,591: INFO: views]: >>>>>I am g i am basically looking for front axle and back axle<<<<<
+
+
+
+[2022-12-19 11:45:35,890: INFO: views]: >>>>><<<<<
+
+
+
+[2022-12-19 13:07:19,688: INFO: views]: >>>>>I needI need radiator<<<<<
+
+
+
+[2022-12-19 13:07:31,348: INFO: views]: >>>>>I needI needI need radiatorI need radiatorI need radiatorI need radiator andI need radiator and battery<<<<<
+
+
+
+[2022-12-19 13:47:19,602: WARNING: log]: Not Found: /actuator/health
+[2022-12-19 14:19:06,437: WARNING: log]: Not Found: /V7zU
+[2022-12-19 15:02:23,915: WARNING: log]: Not Found: /.git/config
+[2022-12-19 16:12:55,615: WARNING: log]: Not Found: /remote/fgt_lang
+[2022-12-19 18:21:19,247: WARNING: log]: Not Found: /CqcE
+[2022-12-19 18:21:19,763: WARNING: log]: Not Found: /UCrS
+[2022-12-19 18:21:40,059: WARNING: log]: Not Found: /.env
+[2022-12-19 18:21:40,713: WARNING: log]: Method Not Allowed: /
+[2022-12-19 18:27:18,232: WARNING: log]: Not Found: /actuator/gateway/routes
+[2022-12-19 19:11:31,493: WARNING: log]: Forbidden: /
+[2022-12-19 19:11:33,594: WARNING: log]: Forbidden: /
+[2022-12-19 19:11:36,117: WARNING: log]: Not Found: /WuEL
+[2022-12-19 19:11:49,343: WARNING: log]: Not Found: /a
+[2022-12-19 19:11:51,014: WARNING: log]: Not Found: /download/file.ext
+[2022-12-19 19:11:52,375: WARNING: log]: Not Found: /SiteLoader
+[2022-12-19 19:11:53,841: WARNING: log]: Not Found: /mPlayer
+[2022-12-19 19:23:06,138: WARNING: log]: Not Found: /V7zU
+[2022-12-19 21:32:58,400: WARNING: log]: Not Found: /ab2g
+[2022-12-19 21:32:59,437: WARNING: log]: Not Found: /ab2h
+[2022-12-19 22:18:52,014: WARNING: log]: Not Found: /remote/fgt_lang
+[2022-12-19 23:08:01,739: WARNING: log]: Not Found: /.env
+[2022-12-20 01:11:39,564: WARNING: log]: Method Not Allowed: /
+[2022-12-20 01:11:54,500: WARNING: log]: Method Not Allowed: /
+[2022-12-20 02:46:46,349: WARNING: log]: Not Found: /remote/fgt_lang
+[2022-12-20 04:51:44,750: WARNING: log]: Not Found: ///3c625c27b4da33d3d5c12e8d02104755/js/login.js
+[2022-12-20 04:53:55,118: WARNING: log]: Not Found: /.env
+[2022-12-20 04:53:56,657: WARNING: log]: Method Not Allowed: /
+[2022-12-20 06:28:55,860: WARNING: log]: Not Found: ///remote/fgt_lang
+[2022-12-20 07:24:59,972: WARNING: log]: Not Found: /owa/auth/logon.aspx
+[2022-12-20 07:55:15,769: WARNING: log]: Not Found: /.env
+[2022-12-20 08:05:21,433: WARNING: log]: Not Found: /Mvb7
+[2022-12-20 11:11:18,370: WARNING: log]: Not Found: /.git/config
+[2022-12-20 12:15:33,341: WARNING: log]: Not Found: /LaCl
+[2022-12-20 13:03:36,997: WARNING: log]: Not Found: /RIqsFa48wBZfozcJTAtrYM1egWF
+[2022-12-20 13:11:30,616: WARNING: log]: Not Found: /LaCl
+[2022-12-20 13:59:56,741: WARNING: log]: Not Found: /remote/fgt_lang
+[2022-12-20 14:32:34,036: WARNING: log]: Not Found: /.git/config
+[2022-12-20 14:47:40,192: WARNING: log]: Not Found: /robots.txt
+[2022-12-20 14:47:41,598: WARNING: log]: Not Found: /sitemap.xml
+[2022-12-20 14:47:43,386: WARNING: log]: Not Found: /.well-known/security.txt
+[2022-12-20 15:14:40,237: WARNING: log]: Not Found: /showLogin.cc
+[2022-12-20 15:40:41,365: WARNING: log]: Not Found: /actuator/gateway/routes
+[2022-12-20 17:59:46,357: WARNING: log]: Not Found: /apis/apps/v1/namespaces/kube-system/daemonsets/
+[2022-12-20 18:15:49,187: WARNING: log]: Not Found: /XjPJ
+[2022-12-20 18:15:49,849: WARNING: log]: Not Found: /R8qb
+[2022-12-20 18:20:42,154: WARNING: log]: Not Found: /owa/auth/logon.aspx
+[2022-12-20 18:25:39,775: WARNING: log]: Not Found: /ecp/Current/exporttool/microsoft.exchange.ediscovery.exporttool.application
+[2022-12-20 18:26:05,220: WARNING: log]: Not Found: /owa/auth/x.js
+[2022-12-20 21:25:59,486: WARNING: log]: Not Found: /.env
+[2022-12-20 21:26:00,468: WARNING: log]: Method Not Allowed: /
+[2022-12-20 21:26:01,451: WARNING: log]: Not Found: /core/.env
+[2022-12-20 21:26:02,427: WARNING: log]: Not Found: /core/.env
+[2022-12-20 21:26:03,411: WARNING: log]: Method Not Allowed: /
+[2022-12-20 21:26:04,385: WARNING: log]: Not Found: /core/.env
+[2022-12-20 22:52:50,277: WARNING: log]: Not Found: /remote/fgt_lang
+[2022-12-20 23:32:47,449: WARNING: log]: Not Found: /.env
+[2022-12-21 02:39:10,829: WARNING: log]: Not Found: /ab2g
+[2022-12-21 02:39:11,824: WARNING: log]: Not Found: /ab2h
+[2022-12-21 02:44:41,190: WARNING: log]: Not Found: /version
+[2022-12-21 05:40:42,925: WARNING: log]: Not Found: /robots.txt
+[2022-12-21 05:48:20,469: WARNING: log]: Not Found: /remote/fgt_lang
+[2022-12-21 06:02:21,382: WARNING: log]: Not Found: /ReportServer
+[2022-12-21 06:14:48,314: WARNING: log]: Not Found: /login
+[2022-12-21 07:25:13,323: WARNING: log]: Not Found: /owa/auth/logon.aspx
+[2022-12-21 07:45:20,609: WARNING: log]: Not Found: /api/jsonws/
+[2022-12-21 08:05:23,326: WARNING: log]: Not Found: /jXKO
+[2022-12-21 08:48:27,417: WARNING: log]: Not Found: /.git/config
+[2022-12-21 09:07:01,441: WARNING: log]: Not Found: /autodiscover/autodiscover.json
+[2022-12-21 10:22:58,686: WARNING: log]: Not Found: /.env
+[2022-12-21 10:23:00,562: WARNING: log]: Method Not Allowed: /
+[2022-12-21 10:23:02,001: WARNING: log]: Not Found: /core/.env
+[2022-12-21 10:23:04,577: WARNING: log]: Not Found: /core/.env
+[2022-12-21 10:23:06,488: WARNING: log]: Method Not Allowed: /
+[2022-12-21 10:23:08,203: WARNING: log]: Not Found: /core/.env

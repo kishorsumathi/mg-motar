@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-s2)sod1#nz*$o5fffq3hvkjfk^*f#i=85z86ak3*@%euj*_9#+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["143.244.138.28"]
+ALLOWED_HOSTS = ["143.244.138.28","mg-voicesearch.sonofsoil.co.in"]
 
 
 # Application definition

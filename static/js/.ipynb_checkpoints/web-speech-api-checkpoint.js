@@ -1,6 +1,6 @@
 var messages = {
   "start": {
-    msg: 'Click on the microphone icon and begin speaking.',
+    msg: 'Click on the record button and ask for the parts you wish to search in Inventory.',
     class: 'alert-success'},
   "speak_now": {
     msg: 'Speak now.',
@@ -31,16 +31,16 @@ var messages = {
     class: 'alert-success'},
 }
 
-var final_transcript = '';
-var recognizing = false;
-var ignore_onend;
-var start_timestamp;
-var recognition;
-var finalresponse='';
-var finalres=''
+let final_transcript = '';
+let recognizing = false;
+let ignore_onend;
+let start_timestamp;
+let recognition;
+let finalresponse='';
+let finalres=''
 
 $( document ).ready(function() {
-  for (var i = 0; i < langs.length; i++) {
+  for (let i = 0; i < langs.length; i++) {
     select_language.options[i] = new Option(langs[i][0], i);
   }
   select_language.selectedIndex = 6;
@@ -103,8 +103,8 @@ $( document ).ready(function() {
     };
 
     recognition.onresult = function(event) {
-      var interim_transcript = '';
-      for (var i = event.resultIndex; i < event.results.length; ++i) {
+      let interim_transcript = '';
+      for (let i = event.resultIndex; i < event.results.length; ++i) {
         if (event.results[i].isFinal) {
           final_transcript += event.results[i][0].transcript;
         } else {
@@ -119,11 +119,11 @@ $( document ).ready(function() {
 });
 
 function updateCountry() {
-  for (var i = select_dialect.options.length - 1; i >= 0; i--) {
+  for (let i = select_dialect.options.length - 1; i >= 0; i--) {
     select_dialect.remove(i);
   }
   var list = langs[select_language.selectedIndex];
-  for (var i = 1; i < list.length; i++) {
+  for (let i = 1; i < list.length; i++) {
     select_dialect.options.add(new Option(list[i][1], list[i][0]));
   }
   select_dialect.style.visibility = list[1].length == 1 ? 'hidden' : 'visible';
@@ -135,13 +135,13 @@ function upgrade() {
   showInfo('upgrade');
 }
 
-var two_line = /\n\n/g;
-var one_line = /\n/g;
+let two_line = /\n\n/g;
+let one_line = /\n/g;
 function linebreak(s) {
   return s.replace(two_line, '<p></p>').replace(one_line, '<br>');
 }
 
-var first_char = /\S/;
+let first_char = /\S/;
 function capitalize(s) {
   return s.replace(first_char, function(m) { return m.toUpperCase(); });
 }
@@ -157,13 +157,13 @@ $("#copy_button").click(function () {
 
 function copyToClipboard() {
   if (document.selection) { 
-      var range = document.body.createTextRange();
+      let range = document.body.createTextRange();
       range.moveToElementText(document.getElementById('results'));
       range.select().createTextRange();
       document.execCommand("copy"); 
   
   } else if (window.getSelection) {
-      var range = document.createRange();
+      let range = document.createRange();
        range.selectNode(document.getElementById('results'));
        window.getSelection().addRange(range);
        document.execCommand("copy");
@@ -196,7 +196,7 @@ $("#select_language").change(function () {
 
 function showInfo(s) {
   if (s) {
-    var message = messages[s];
+    let message = messages[s];
     $("#info").html(message.msg);
     $("#info").removeClass();
     $("#info").addClass('alert');
@@ -208,7 +208,7 @@ function showInfo(s) {
 }
 
 function senddata() {
-    var result = final_transcript ;
+    let result = final_transcript ;
     $.ajax({
         type: "POST",
         url: '/search',
@@ -217,10 +217,10 @@ function senddata() {
         },
         dataType: "json",
         success: function (data) {
-            console.log("successfull")
+            console.log("Data sent successfull")
         },
         failure: function () {
-            console.log("failure");
+            console.log("Data sent failure");
         }
     });
     const myTimeout = setTimeout(fetchdata, 2000);    
