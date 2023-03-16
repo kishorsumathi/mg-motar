@@ -13,7 +13,6 @@ from nltk.corpus import stopwords
 from nltk.stem import PorterStemmer
 from nltk.tokenize import sent_tokenize
 import spacy
-import spacy
 from spacy.matcher import PhraseMatcher
 import numpy as np
 import os
